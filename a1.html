@@ -1,0 +1,114 @@
+<html>
+	<head>
+		<title>Login</title>
+
+		<style>
+		*{
+			margin:0px;
+			padding:0px;
+		}
+		body{
+			background-color:black;
+		}
+		.login{
+			background-color:#f2f2f2;
+			width: 30%;
+			margin: 130px auto;
+			height:290px;
+			border:2px solid;
+			border-radius:20px;
+			border-color:rgb(240,210,220);
+			border-width:5px;
+		}
+		.title{
+			color:rgb(180,189,100);
+			margin-left:30px;
+			font-size:20px;
+		}
+		.box{
+			width: 60%;
+			padding: 12px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+			resize: vertical;
+			margin-left:20px;
+			margin-top:5px;
+		}
+		.row-10{
+			padding-top:10px;
+			margin-left:20px;
+			font-size:20px;
+		}
+		.box2{
+			width: 60%;
+			padding: 12px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+			resize: vertical;
+			margin-left:20px;
+			margin-top:5px;
+		}
+		.button{
+			margin-left:20px;
+		}
+		.btn1{
+			height:30px;
+			width:100px;
+			border-radius:10px;
+			border-color:rgb(240,210,220);
+			font-size:20px;	
+		}
+		@media only screen and (max-width: 1000px)
+		{
+			.title{
+				font-size: 16px;
+			}
+		}
+		@media only screen and (max-width: 700px)
+		{
+			.title{
+				font-size: 12px;
+			}
+		}
+		@media only screen and (max-width: 400px)
+		{
+			.title{
+				font-size: 8px;
+			}
+		}
+		</style>
+	</head>
+	<body>
+		<div class="login">
+			<div class="title">
+				<h2>Restaurant Management</h2>
+			</div>
+			<form action="exist_account.php" method="POST">
+				
+				<div class="row">
+					<div class="row-10">
+						<label for="uname">Username</label>
+					</div>
+					<div class="row-14">
+						<input type="text" class="box" name="uname" placeholder="Username" autocomplete="off" autofocus="on" required><br><br>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="row-10">
+						<label for="psw">Password</label>
+					</div>
+					<div class="row-14">
+						<input type="password" class="box2" name="psw" placeholder="Password" autocomplete="off" required><br><br>
+					</div>
+				</div>
+				<div class="button">
+					<input type="submit" class="btn1" name="btn1" value="Login">
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
+			
